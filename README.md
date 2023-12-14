@@ -24,7 +24,14 @@ b) Permiten la creación de funciones y clases genéricas, es decir, que pueden 
 Los templates en C++ son una característica que permite la creación de funciones y clases genéricas. Estos facilitan la escritura de código que puede trabajar con diferentes tipos de datos sin necesidad de escribir múltiples versiones de la misma función o clase para cada tipo de dato. Esto promueve la reutilización del código y la flexibilidad en el diseño de programas.
 
 Con esto finaliza la parte 1.
+
 Para que pueda vizualizar la parte 2 le dejo el link para que pueda verla.
+
+5.Discusión sobre Manejo de Errores en C
+
+En C, no existe un sistema integrado de manejo de excepciones como en C++. Sin embargo, es posible manejar errores mediante el uso de códigos de retorno de funciones y variables para indicar estados de error. Esto generalmente implica verificar manualmente los valores de retorno de las funciones y manejar los casos de error de manera específica dentro del código.
+
+Podrías utilizar códigos de retorno especiales para indicar errores, por ejemplo, devolviendo un valor negativo o cero para indicar un error, y luego realizar comprobaciones en el código para manejar esos casos de error específicos.
 
 
 
