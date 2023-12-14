@@ -1,7 +1,3 @@
-//
-// Created by danij on 14/12/2023.
-//
-
 #ifndef EJERCICIO_ESTUDIANTE_H
 #define EJERCICIO_ESTUDIANTE_H
 
