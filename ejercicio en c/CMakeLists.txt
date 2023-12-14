@@ -3,6 +3,7 @@ project(ejercicio_en_c)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(ejercicio_en_c main.cpp
-        Estudiante_C.h
-        Estudiante_C.c)
+add_executable(main.c
+        Estudiante_C.c Estudiante_C.h
+        main.c
+)

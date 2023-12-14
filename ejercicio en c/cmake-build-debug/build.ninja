@@ -41,43 +41,43 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/danij/OneDrive/Documentos/GitHub/Examen_tema2/ejercicio$ en$ c/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target ejercicio_en_c
+# Object build statements for EXECUTABLE target main.c
 
 
 #############################################
-# Order-only phony target for ejercicio_en_c
+# Order-only phony target for main.c
 
-build cmake_object_order_depends_target_ejercicio_en_c: phony || CMakeFiles/ejercicio_en_c.dir
+build cmake_object_order_depends_target_main.c: phony || CMakeFiles/main.c.dir
 
-build CMakeFiles/ejercicio_en_c.dir/main.cpp.obj: CXX_COMPILER__ejercicio_en_c_unscanned_Debug C$:/Users/danij/OneDrive/Documentos/GitHub/Examen_tema2/ejercicio$ en$ c/main.cpp || cmake_object_order_depends_target_ejercicio_en_c
-  DEP_FILE = CMakeFiles\ejercicio_en_c.dir\main.cpp.obj.d
+build CMakeFiles/main.c.dir/Estudiante_C.c.obj: C_COMPILER__main.2ec_unscanned_Debug C$:/Users/danij/OneDrive/Documentos/GitHub/Examen_tema2/ejercicio$ en$ c/Estudiante_C.c || cmake_object_order_depends_target_main.c
+  DEP_FILE = CMakeFiles\main.c.dir\Estudiante_C.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\ejercicio_en_c.dir
-  OBJECT_FILE_DIR = CMakeFiles\ejercicio_en_c.dir
+  OBJECT_DIR = CMakeFiles\main.c.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.c.dir
 
-build CMakeFiles/ejercicio_en_c.dir/Estudiante_C.c.obj: C_COMPILER__ejercicio_en_c_unscanned_Debug C$:/Users/danij/OneDrive/Documentos/GitHub/Examen_tema2/ejercicio$ en$ c/Estudiante_C.c || cmake_object_order_depends_target_ejercicio_en_c
-  DEP_FILE = CMakeFiles\ejercicio_en_c.dir\Estudiante_C.c.obj.d
+build CMakeFiles/main.c.dir/main.c.obj: C_COMPILER__main.2ec_unscanned_Debug C$:/Users/danij/OneDrive/Documentos/GitHub/Examen_tema2/ejercicio$ en$ c/main.c || cmake_object_order_depends_target_main.c
+  DEP_FILE = CMakeFiles\main.c.dir\main.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\ejercicio_en_c.dir
-  OBJECT_FILE_DIR = CMakeFiles\ejercicio_en_c.dir
+  OBJECT_DIR = CMakeFiles\main.c.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.c.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target ejercicio_en_c
+# Link build statements for EXECUTABLE target main.c
 
 
 #############################################
-# Link the executable ejercicio_en_c.exe
+# Link the executable main.c.exe
 
-build ejercicio_en_c.exe: CXX_EXECUTABLE_LINKER__ejercicio_en_c_Debug CMakeFiles/ejercicio_en_c.dir/main.cpp.obj CMakeFiles/ejercicio_en_c.dir/Estudiante_C.c.obj
+build main.c.exe: C_EXECUTABLE_LINKER__main.2ec_Debug CMakeFiles/main.c.dir/Estudiante_C.c.obj CMakeFiles/main.c.dir/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\ejercicio_en_c.dir
+  OBJECT_DIR = CMakeFiles\main.c.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = ejercicio_en_c.exe
-  TARGET_IMPLIB = libejercicio_en_c.dll.a
-  TARGET_PDB = ejercicio_en_c.exe.dbg
+  TARGET_FILE = main.c.exe
+  TARGET_IMPLIB = libmain.c.dll.a
+  TARGET_PDB = main.c.exe.dbg
 
 
 #############################################
@@ -105,7 +105,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build ejercicio_en_c: phony ejercicio_en_c.exe
+build main.c: phony main.c.exe
 
 # =============================================================================
 # Folder targets.
@@ -115,7 +115,7 @@ build ejercicio_en_c: phony ejercicio_en_c.exe
 #############################################
 # Folder: C:/Users/danij/OneDrive/Documentos/GitHub/Examen_tema2/ejercicio en c/cmake-build-debug
 
-build all: phony ejercicio_en_c.exe
+build all: phony main.c.exe
 
 # =============================================================================
 # Built-in targets
