@@ -7,4 +7,5 @@ add_executable(ejercicio main.cpp
         Estudiante.cpp
         Estudiante.h
         Asistencia.cpp
-        Asistencia.h)
+        Asistencia.h
+        Excepciones.h)

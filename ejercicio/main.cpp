@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include "Excepciones.h"
 
 using namespace std;
 
@@ -66,5 +67,17 @@ int main() {
     cout << "Después de eliminar Historia:" << endl;
     mostrarEstudiante(estudiante);
 
+    try {
+        throw FormatoFechaInvalido();
+    } catch (const std::exception& e) {
+        std::cout << "Excepción capturada: " << e.what() << std::endl;
+    }
+
+    try {
+        throw MateriaNoRegistrada();
+    } catch (const std::exception& e) {
+        std::cout << "Excepción capturada: " << e.what() << std::endl;
+    }
+    
     return 0;
 }
