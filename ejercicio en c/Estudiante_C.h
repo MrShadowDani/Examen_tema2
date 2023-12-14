@@ -13,5 +13,8 @@ struct Estudiante {
 };
 
 void mostrarEstudiante(struct Estudiante estudiante);
+void agregarMateria(struct Estudiante* estudiante, const char* materia);
+void eliminarMateria(struct Estudiante* estudiante, const char* materia);
+void mostrarMaterias(struct Estudiante estudiante);
 
 #endif //EJERCICIO_EN_C_ESTUDIANTE_C_H
