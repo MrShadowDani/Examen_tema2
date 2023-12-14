@@ -10,6 +10,10 @@ struct Estudiante {
     int edad;
     float promedio;
     std::vector<std::string> materias;
+
+    void agregarMateria(const std::string& materia);
+    void eliminarMateria(const std::string& materia);
+    void mostrarMaterias();
 };
 
 void mostrarEstudiante(const Estudiante& estudiante);
