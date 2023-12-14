@@ -61,6 +61,12 @@ build CMakeFiles/main.c.dir/main.c.obj: C_COMPILER__main.2ec_unscanned_Debug C$:
   OBJECT_DIR = CMakeFiles\main.c.dir
   OBJECT_FILE_DIR = CMakeFiles\main.c.dir
 
+build CMakeFiles/main.c.dir/Asistencia_C.c.obj: C_COMPILER__main.2ec_unscanned_Debug C$:/Users/danij/OneDrive/Documentos/GitHub/Examen_tema2/ejercicio$ en$ c/Asistencia_C.c || cmake_object_order_depends_target_main.c
+  DEP_FILE = CMakeFiles\main.c.dir\Asistencia_C.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\main.c.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.c.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main.c
@@ -69,7 +75,7 @@ build CMakeFiles/main.c.dir/main.c.obj: C_COMPILER__main.2ec_unscanned_Debug C$:
 #############################################
 # Link the executable main.c.exe
 
-build main.c.exe: C_EXECUTABLE_LINKER__main.2ec_Debug CMakeFiles/main.c.dir/Estudiante_C.c.obj CMakeFiles/main.c.dir/main.c.obj
+build main.c.exe: C_EXECUTABLE_LINKER__main.2ec_Debug CMakeFiles/main.c.dir/Estudiante_C.c.obj CMakeFiles/main.c.dir/main.c.obj CMakeFiles/main.c.dir/Asistencia_C.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\main.c.dir

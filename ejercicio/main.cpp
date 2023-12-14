@@ -1,52 +1,69 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "Estudiante.h"
+#include <algorithm>
 
-void Estudiante::agregarMateria(const std::string& materia) {
+using namespace std;
+
+class Estudiante {
+public:
+    string nombre;
+    int edad;
+    float promedio;
+    vector<string> materias;
+
+    // Constructor que inicializa las variables
+    Estudiante(const string& nombre, int edad, float promedio)
+            : nombre(nombre), edad(edad), promedio(promedio) {}
+
+    void agregarMateria(const string& materia);
+    void eliminarMateria(const string& materia);
+    void mostrarMaterias() const;
+};
+
+// Resto del código se mantiene igual...
+
+
+void Estudiante::agregarMateria(const string& materia) {
     materias.push_back(materia);
 }
 
-void Estudiante::eliminarMateria(const std::string& materia) {
-    // Eliminar la materia si existe
-    auto it = std::find(materias.begin(), materias.end(), materia);
+void Estudiante::eliminarMateria(const string& materia) {
+    auto it = find(materias.begin(), materias.end(), materia);
     if (it != materias.end()) {
         materias.erase(it);
     }
 }
 
-void Estudiante::mostrarMaterias() {
-    std::cout << "Materias: ";
+void Estudiante::mostrarMaterias() const {
+    cout << "Materias: ";
     for (const auto& materia : materias) {
-        std::cout << materia << ", ";
+        cout << materia << ", ";
     }
-    std::cout << std::endl;
+    cout << endl;
 }
 
 void mostrarEstudiante(const Estudiante& estudiante) {
-    std::cout << "Nombre: " << estudiante.nombre << std::endl;
-    std::cout << "Edad: " << estudiante.edad << std::endl;
-    std::cout << "Promedio: " << estudiante.promedio << std::endl;
+    cout << "Nombre: " << estudiante.nombre << endl;
+    cout << "Edad: " << estudiante.edad << endl;
+    cout << "Promedio: " << estudiante.promedio << endl;
     estudiante.mostrarMaterias();
 }
 
 int main() {
-    Estudiante estudiante;
-    estudiante.nombre = "Juan";
-    estudiante.edad = 20;
-    estudiante.promedio = 8.5;
+    Estudiante estudiante("Juan", 20, 8.5);
     estudiante.materias = {"Matematicas", "Historia", "Fisica"};
 
     mostrarEstudiante(estudiante);
 
     // Agregar una materia
     estudiante.agregarMateria("Quimica");
-    std::cout << "Después de agregar Quimica:" << std::endl;
+    cout << "Después de agregar Quimica:" << endl;
     mostrarEstudiante(estudiante);
 
     // Eliminar una materia
     estudiante.eliminarMateria("Historia");
-    std::cout << "Después de eliminar Historia:" << std::endl;
+    cout << "Después de eliminar Historia:" << endl;
     mostrarEstudiante(estudiante);
 
     return 0;

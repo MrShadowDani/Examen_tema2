@@ -61,6 +61,12 @@ build CMakeFiles/ejercicio.dir/Estudiante.cpp.obj: CXX_COMPILER__ejercicio_unsca
   OBJECT_DIR = CMakeFiles\ejercicio.dir
   OBJECT_FILE_DIR = CMakeFiles\ejercicio.dir
 
+build CMakeFiles/ejercicio.dir/Asistencia.cpp.obj: CXX_COMPILER__ejercicio_unscanned_Debug C$:/Users/danij/OneDrive/Documentos/GitHub/Examen_tema2/ejercicio/Asistencia.cpp || cmake_object_order_depends_target_ejercicio
+  DEP_FILE = CMakeFiles\ejercicio.dir\Asistencia.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ejercicio.dir
+  OBJECT_FILE_DIR = CMakeFiles\ejercicio.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ejercicio
@@ -69,7 +75,7 @@ build CMakeFiles/ejercicio.dir/Estudiante.cpp.obj: CXX_COMPILER__ejercicio_unsca
 #############################################
 # Link the executable ejercicio.exe
 
-build ejercicio.exe: CXX_EXECUTABLE_LINKER__ejercicio_Debug CMakeFiles/ejercicio.dir/main.cpp.obj CMakeFiles/ejercicio.dir/Estudiante.cpp.obj
+build ejercicio.exe: CXX_EXECUTABLE_LINKER__ejercicio_Debug CMakeFiles/ejercicio.dir/main.cpp.obj CMakeFiles/ejercicio.dir/Estudiante.cpp.obj CMakeFiles/ejercicio.dir/Asistencia.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ejercicio.dir
