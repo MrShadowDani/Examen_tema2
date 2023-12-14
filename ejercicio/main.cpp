@@ -78,6 +78,6 @@ int main() {
     } catch (const std::exception& e) {
         std::cout << "Excepción capturada: " << e.what() << std::endl;
     }
-    
+
     return 0;
 }
